@@ -1,11 +1,8 @@
 {
-  "name": "scapegoat",
-  "version": "0.0.0",
-  "description": "A small library providing utility methods to escape and unescape HTML entities",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo "Error: no test specified" && exit 1"
-  },
+  "name": "node-meerkat",
+  "version": "0.0.1",
+  "description": "A Node.js library for Meerkat http://meerkatapp.co",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/brentertz/scapegoat.git"
