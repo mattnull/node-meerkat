@@ -1,5 +1,7 @@
 # Meerkat
 ## Node.js module for Meerkat http://meerkatapp.co
+<a href="https://nodei.co/npm/node-meerkat/"><img src="https://nodei.co/npm/node-meerkat.png?downloads=true&downloadRank=true&stars=true"></a>
+
 # Installation
 `npm install node-meerkat`
 
