@@ -25,5 +25,8 @@
     "gulp-coffee": "^1.4.3",
     "gulp-plumber": "^0.6.2",
     "gulp-rename": "^1.2.0"
+  },
+  "dependencies": {
+    "request": "^2.55.0"
   }
 }
