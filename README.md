@@ -1,5 +1,5 @@
 # Meerkat
-
+## Node.js module for Meerkat http://meerkatapp.co
 # Installation
 `npm install node-meerkat`
 
