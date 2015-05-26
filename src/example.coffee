@@ -1,14 +1,6 @@
-# Meerkat
+Meerkat = require './index'
 
-# Installation
-`npm install node-meerkat`
-
-# Usage
-
-```coffeescript
-Meerkat = require 'node-meerkat'
-
-m = new Meerkat('APIKEY') # works with or without API Key
+m = new Meerkat()
 
 m.getAllBroadcasts (err, broadcasts) ->
 	console.log err, broadcasts
@@ -36,5 +28,3 @@ m.getBroadcast '2ec508ef-b618-487c-930b-f0f8636b964f', (err, broadcast) ->
 
 m.getUser '5564d3d26b00002700e2966d', (err, user) ->
 	console.log err, user
-```
-
