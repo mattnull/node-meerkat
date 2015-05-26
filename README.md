@@ -1,26 +1,28 @@
-<img src="http://beinghuman.is/public/img/color-bar-2000x3.png" />
-# Human Design
-### Human Bootstrap is a Node.js boilerplate
+# Meerkat
 
-## Dependencies
+# Usage
 
-This command needs to be run first if CoffeeScript is not installed on your system
+``coffeescript
+m = new Meerkat('APIKEY') # Meerkat says that you need an API key. But you do not.
+m.getAllBroadcasts (err, b) ->
+	console.log err, b
+m.getAllScheduledBroadcasts (err, b) ->
+	console.log err, b
 
-* run `sudo npm install -g coffee-script`
-* run `sudo npm install -g gulp`
+m.getBroadcastActivities '2ec508ef-b618-487c-930b-f0f8636b964f', (err, b) ->
+	console.log err, b
 
-## Setup
+m.getBroadcastRestreams '2ec508ef-b618-487c-930b-f0f8636b964f', (err, b) ->
+	console.log err, b
+m.getBroadcastComments '2ec508ef-b618-487c-930b-f0f8636b964f', (err, b) ->
+	console.log err, b
+m.getBroadcastLikes '2ec508ef-b618-487c-930b-f0f8636b964f' ,(err, b) ->
+	console.log err, b
+m.getBroadcastWatchers '2ec508ef-b618-487c-930b-f0f8636b964f', (err, b) ->
+	console.log err, b
+m.getBroadcast '2ec508ef-b618-487c-930b-f0f8636b964f', (err, b) ->
+	console.log err, b
+m.getUser '5564d3d26b00002700e2966d', (err, b) ->
+	console.log err, b
+`
 
-Install all of the dependencies necessary for the bootstrap
-
-* run `npm install`
-
-## Development
-
-The following command will watch and compile Coffeescript and Stylus.
-
-* run `gulp`
-
-## Minify
-
-* run `gulp build`
