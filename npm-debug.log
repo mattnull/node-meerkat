@@ -1,0 +1,99 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish', '.' ]
+2 info using npm@2.9.1
+3 info using node@v0.12.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/mattnull/Projects/node-meerkat',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/mattnull/.npm/node-meerkat/0.0.2/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/mattnull/.npm/node-meerkat/0.0.2/package.tgz',
+9 verbose tar pack   '/Users/mattnull/Projects/node-meerkat' ]
+10 verbose tarball /Users/mattnull/.npm/node-meerkat/0.0.2/package.tgz
+11 verbose folder /Users/mattnull/Projects/node-meerkat
+12 info prepublish node-meerkat@0.0.2
+13 verbose addLocalTarball adding from inside cache /Users/mattnull/.npm/node-meerkat/0.0.2/package.tgz
+14 silly cache afterAdd node-meerkat@0.0.2
+15 verbose afterAdd /Users/mattnull/.npm/node-meerkat/0.0.2/package/package.json not in flight; writing
+16 verbose afterAdd /Users/mattnull/.npm/node-meerkat/0.0.2/package/package.json written
+17 silly publish { name: 'node-meerkat',
+17 silly publish   version: '0.0.2',
+17 silly publish   description: 'A Node.js library for Meerkat http://meerkatapp.co',
+17 silly publish   main: 'lib/index.js',
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'https://github.com/mattnull/node-meerkat.git' },
+17 silly publish   keywords: [ 'meerkat', 'api', 'social', 'live', 'video' ],
+17 silly publish   author: { name: 'Matt Null', email: 'hello@mattnull.com' },
+17 silly publish   engines: { node: '0.10.x', npm: '2.x' },
+17 silly publish   devDependencies:
+17 silly publish    { 'coffee-script': '^1.9.2',
+17 silly publish      gulp: '^3.6.2',
+17 silly publish      'gulp-coffee': '^1.4.3',
+17 silly publish      'gulp-plumber': '^0.6.2',
+17 silly publish      'gulp-rename': '^1.2.0' },
+17 silly publish   dependencies: { request: '^2.55.0' },
+17 silly publish   readme: '# Meerkat\n## Node.js module for Meerkat http://meerkatapp.co\n<a href="https://nodei.co/npm/node-meerkat/"><img src="https://nodei.co/npm/node-meerkat.png?downloads=true&stars=true"></a>\n# Installation\n`npm install node-meerkat`\n\n# Usage\n\n```coffeescript\nMeerkat = require \'node-meerkat\'\n\nm = new Meerkat(\'APIKEY\') # works with or without API Key\n\nm.getAllBroadcasts (err, broadcasts) ->\n\tconsole.log err, broadcasts\n\nm.getAllScheduledBroadcasts (err, schedules) ->\n\tconsole.log err, schedules\n\nm.getBroadcastActivities \'2ec508ef-b618-487c-930b-f0f8636b964f\', (err, activities) ->\n\tconsole.log err, activities\n\nm.getBroadcastRestreams \'2ec508ef-b618-487c-930b-f0f8636b964f\', (err, restreams) ->\n\tconsole.log err, restreams\n\nm.getBroadcastComments \'2ec508ef-b618-487c-930b-f0f8636b964f\', (err, comments) ->\n\tconsole.log err, comments\n\nm.getBroadcastLikes \'2ec508ef-b618-487c-930b-f0f8636b964f\' ,(err, likes) ->\n\tconsole.log err, likes\n\nm.getBroadcastWatchers \'2ec508ef-b618-487c-930b-f0f8636b964f\', (err, watchers) ->\n\tconsole.log err, watchers\n\nm.getBroadcast \'2ec508ef-b618-487c-930b-f0f8636b964f\', (err, broadcast) ->\n\tconsole.log err, broadcast\n\nm.getUser \'5564d3d26b00002700e2966d\', (err, user) ->\n\tconsole.log err, user\n```\n\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '8f32486c3f5d0883a3741842d6c97a032a2422e6',
+17 silly publish   bugs: { url: 'https://github.com/mattnull/node-meerkat/issues' },
+17 silly publish   homepage: 'https://github.com/mattnull/node-meerkat',
+17 silly publish   _id: 'node-meerkat@0.0.2',
+17 silly publish   scripts: {},
+17 silly publish   _shasum: 'c8526ee23f9cf1c3cbcf3fa65dd940a5e9f644e1',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name node-meerkat
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/node-meerkat
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /Users/mattnull/.npm/node-meerkat/0.0.2/package.tgz
+25 verbose request uri https://registry.npmjs.org/node-meerkat
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 10:23:51 PM
+28 verbose request using bearer token for auth
+29 verbose request id 529d1c2fc5a3b45d
+30 http request PUT https://registry.npmjs.org/node-meerkat
+31 http 403 https://registry.npmjs.org/node-meerkat
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=60',
+32 verbose headers   'content-length': '95',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Thu, 18 Jun 2015 04:23:51 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-dfw1826-DFW',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1434601431.018818,VS0,VE732' }
+33 verbose request invalidating /Users/mattnull/.npm/registry.npmjs.org/node-meerkat on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 0.0.2." : node-meerkat
+35 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+35 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+35 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:368:22)
+35 verbose stack     at Request.emit (events.js:110:17)
+35 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1219:14)
+35 verbose stack     at Request.emit (events.js:129:20)
+35 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1167:12)
+35 verbose stack     at IncomingMessage.emit (events.js:129:20)
+35 verbose stack     at _stream_readable.js:908:16
+35 verbose stack     at process._tickCallback (node.js:355:11)
+36 verbose statusCode 403
+37 verbose pkgid node-meerkat
+38 verbose cwd /Users/mattnull/Projects/node-meerkat
+39 error Darwin 14.3.0
+40 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "."
+41 error node v0.12.3
+42 error npm  v2.9.1
+43 error code E403
+44 error "You cannot publish over the previously published version 0.0.2." : node-meerkat
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
