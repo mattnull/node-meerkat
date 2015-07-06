@@ -10,7 +10,13 @@ module.exports = class Meerkat
 		@__request = (url, cb) ->
 			cb = cb ? () ->
 			url = url ? ''
-			request.get "#{url}?v=#{@version}", (err, response, body) ->
+			opts = 
+				url: "#{url}?v=#{@version}"
+				method: 'GET',
+				headers: 
+					'Authorization': @apiKey
+
+			request opts, (err, response, body) ->
 				body = JSON.parse(body)
 				cb(err, body)
 

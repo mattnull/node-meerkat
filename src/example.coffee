@@ -1,6 +1,6 @@
 Meerkat = require './index'
 
-m = new Meerkat()
+m = new Meerkat('MY_API_KEY')
 
 m.getAllBroadcasts (err, broadcasts) ->
 	console.log err, broadcasts
