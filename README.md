@@ -9,7 +9,7 @@
 ```coffeescript
 Meerkat = require 'node-meerkat'
 
-m = new Meerkat('APIKEY') # works with or without API Key
+m = new Meerkat('APIKEY')
 
 m.getAllBroadcasts (err, broadcasts) ->
 	console.log err, broadcasts
